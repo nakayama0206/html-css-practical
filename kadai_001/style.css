@@ -1,0 +1,208 @@
+/*PC、スマホ共通スタイル */
+body {
+    font-family: "Noto Sans JP",　sans-serif;
+}
+p {
+    font-size: 18px;
+}
+footer {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+/* 横幅設定 */
+body {
+    min-width: 960px;    
+}
+/* ヘッダー */
+header {
+    max-width: 980px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    /* padding: 32px 16px; */
+    margin: 20px auto;
+    align-items: center;
+}
+
+/* Myprofile */
+#myprofile {
+    text-align: center;
+    display: inline;
+    border-width: 1px;
+    border-style: solid;
+    font-size: 34px;
+    padding: 0 20px;
+    margin: 0 0 0 20px;
+}
+/* ナビゲーションのレイアウト */
+#nav-pc {
+    color: #000000;
+    font-size: 34px;
+    margin: 20px 0;
+}
+/* ナビゲーションのリンクの装飾設定 */
+#nav-pc > a {
+    text-decoration: none;
+    margin-left: 20px;
+}
+#nav-pc > a:link {
+    color: #000000;
+}
+#nav-pc > a:visited {
+    color: #000000;
+}
+#nav-pc > a:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+#nav-pc > a:active {
+    color: #000000;
+}
+/* メインビジュアル */
+#main-visual {
+    position: relative;
+    height: auto;
+}
+
+#main-visual > img {
+    width: 100%;
+}
+
+/* about */
+#about-section {
+    margin-top: 73px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.about-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 73px;
+}
+/* 写真 */
+.photo-container {
+    margin-right: 20px;
+}
+/* Kazuki */
+#kazukiasahina {
+    width: 282px;
+    height: 284px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+h1 {
+    font-size: 34px;
+    text-align: center;
+}
+h2 {
+    font-size: 24px;
+    margin-bottom: 18px;
+}
+.text-container {
+    margin-left: 119px;
+}
+.text-container ul {
+    font-size: 18px;
+    padding: 0;
+    margin-left: 30px;
+}
+/* Works */
+.works-container {
+    display: flex;
+    justify-content: space-around;
+}
+.works-container > div {
+    display: inline;
+}
+.works-item {
+    width: 30%;
+}
+.works-item > img {
+    width: 100%;
+}
+#works-section {
+    margin: 100px 0;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+/*================
+SP用のスタイル
+=================*/
+@media screen and (max-width: 767px) {
+    body {
+        min-width: 375px;
+        margin: 0;
+        padding: 0;
+        font-size: 18px;
+    }
+    p {
+        margin: 0;
+    }
+    footer {
+        text-align: center;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        /* align-items: center; */
+    }
+        
+     /* Myprofile */
+    #myprofile {
+        text-align: center;
+        display: inline;
+        border-width: 1px;
+        border-style: solid;
+        font-size: 28px;
+    }
+    /* ナビゲーションのレイアウト */
+    #nav-pc {
+        color: #000000;
+        font-size: 24px;
+        display: flex;
+        margin: 20px 0;
+    }
+    /* ナビゲーションのリンクの装飾設定 */
+    #nav-pc > a {
+        text-decoration: none;
+        display: inline;
+        margin: 0 10px;
+    }
+    #nav-pc > a:link {
+        color: #000000;
+    }
+    #nav-pc > a:visited {
+        color: #000000;
+    }
+    #nav-pc > a:hover {
+        color: #000000;
+        text-decoration: underline;
+    }
+    #nav-pc > a:active {
+        color: #000000;
+    }
+    
+    .about-container {
+        display: flex;
+        flex-wrap: wrap;
+        /* align-items: center; */
+    }
+    .text-container {
+        margin: 0 40px;
+    }
+    .photo-container {
+        justify-content: center;
+        margin: auto;
+    }
+    .works-container {
+        display: block;
+        text-align: center;
+        justify-content: center;
+        margin: 0 10px;
+    }
+    .works-item > p {
+        margin: 0 0 50px 0;
+    }
+}
