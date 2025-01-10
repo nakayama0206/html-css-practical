@@ -13,7 +13,8 @@ footer {
 
 /* 横幅設定 */
 body {
-    min-width: 960px;    
+    min-width: 960px;
+    margin: 0;
 }
 /* ヘッダー */
 header {
@@ -74,7 +75,7 @@ header {
 #about-section {
     margin-top: 73px;
     max-width: 1440px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 .about-container {
     display: flex;
@@ -125,7 +126,7 @@ h2 {
 #works-section {
     margin: 100px 0;
     max-width: 1440px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 /*================
 SP用のスタイル
